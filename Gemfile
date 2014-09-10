@@ -17,6 +17,7 @@ gem 'spring',        group: :development
 gem 'autoprefixer-rails'
 
 gem "paperclip", "~> 4.2"
+gem "paperclip-dropbox", ">= 1.1.7"
 
 group :production do
 	gem 'pg'

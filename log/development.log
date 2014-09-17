@@ -6318,3 +6318,1530 @@ SyntaxError (/Users/dubyabee2/source/code/etsydemo/app/models/listing.rb:3: synt
   Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:18:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (44.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+Completed 500 Internal Server Error in 133ms
+
+SyntaxError (/Users/dubyabee2/source/code/etsydemo/app/models/listing.rb:3: syntax error, unexpected =>, expecting keyword_end
+      				:storage => :dropbox;
+      				           ^
+/Users/dubyabee2/source/code/etsydemo/app/models/listing.rb:4: syntax error, unexpected =>, expecting keyword_end
+	  				:dropbox_credentials => Rails.root.join("config/dropbox.yml")
+	  				                       ^):
+  app/models/listing.rb:3: syntax error, unexpected =>, expecting keyword_end
+  app/models/listing.rb:4: syntax error, unexpected =>, expecting keyword_end
+  app/controllers/listings_controller.rb:7:in `index'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:32:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (3.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+Completed 500 Internal Server Error in 39ms
+
+SyntaxError (/Users/dubyabee2/source/code/etsydemo/app/models/listing.rb:5: syntax error, unexpected keyword_end):
+  app/models/listing.rb:5: syntax error, unexpected keyword_end
+  app/controllers/listings_controller.rb:7:in `index'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:33:33 -0700
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.6ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (753.5ms)
+Completed 500 Internal Server Error in 781ms
+
+ActionView::Template::Error (Path '/pillows.jpg' not found):
+    3: 	  <% @listings.each do |listing| %>
+    4: 		  <div class="col-md-3">
+    5: 		      <div class="thumbnail">
+    6: 			      <%= image_tag listing.image.url %>
+    7: 				      <div class="caption">
+    8: 				        <h3><%= listing.name %></h3>
+    9: 		                <p><%= listing.description %></p>
+  app/views/listings/index.html.erb:6:in `block in _app_views_listings_index_html_erb__370193979293876941_70211267632480'
+  app/views/listings/index.html.erb:3:in `_app_views_listings_index_html_erb__370193979293876941_70211267632480'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (212.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 749ms (Views: 748.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:12 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:13 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:35:13 -0700
+
+
+Started GET "/listings/3/edit" for 127.0.0.1 at 2014-09-16 20:35:17 -0700
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered listings/_form.html.erb (48.4ms)
+  Rendered listings/edit.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 187ms (Views: 184.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:36:03 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6ab533360 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-1yuvuob>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 243ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (142.0ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:39:07 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6ab6c1808 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-17r4320>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 51ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.3ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:39:11 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6b1031f50 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-1icsrqi>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 24ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/listings/3/edit" for 127.0.0.1 at 2014-09-16 20:39:30 -0700
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered listings/_form.html.erb (2.6ms)
+  Rendered listings/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 140.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:39:37 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6b110a0a8 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-hg5m4r>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 24ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:47:09 -0700
+
+SyntaxError (/Users/dubyabee2/source/code/etsydemo/app/controllers/listings_controller.rb:46: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...dates_attachment_content_type :image, :content_type => ["ima...
+...                               ^):
+  app/controllers/listings_controller.rb:46: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:47:57 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6b00a8778 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-sro2v5>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[35mListing Load (0.4ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 29ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dubyabee2/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/listings/3/edit" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered listings/_form.html.erb (3.2ms)
+  Rendered listings/edit.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 111.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:19 -0700
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:51:27 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6b1059000 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-1dlx8c4>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-1atnit7.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-cgqcz4.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-cgqcz4.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-1opszvh.jpg'
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered listings/_form.html.erb (4.1ms)
+  Rendered listings/edit.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3337ms (Views: 122.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:51:31 -0700
+
+
+Started GET "/listings/3/edit" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered listings/_form.html.erb (2.9ms)
+  Rendered listings/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 116.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:20 -0700
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:52:23 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6ab7e84c0 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-n62yh4>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-160tp4z.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-16kt0ic.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-16kt0ic.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-1rdumj7.jpg'
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered listings/_form.html.erb (4.4ms)
+  Rendered listings/edit.html.erb within layouts/application (19.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2826ms (Views: 146.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:26 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:27 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 112.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:34 -0700
+
+
+Started GET "/listings/7/edit" for 127.0.0.1 at 2014-09-16 20:52:37 -0700
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered listings/_form.html.erb (2.3ms)
+  Rendered listings/edit.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/listings/7" for 127.0.0.1 at 2014-09-16 20:52:44 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Golf", "description"=>"A Car", "price"=>"1999.97", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6aa4aced8 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-6njnp5>, @original_filename="Golf.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"Golf.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"7"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-oiwmpe.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-7x8sgu.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-7x8sgu.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-15o7gs9.jpg'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered listings/_form.html.erb (4.0ms)
+  Rendered listings/edit.html.erb within layouts/application (70.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1576ms (Views: 147.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:52:46 -0700
+
+
+Started PATCH "/listings/7" for 127.0.0.1 at 2014-09-16 20:57:03 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Golf", "description"=>"A Car", "price"=>"1999.97", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6ab03a0c0 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-16mtv0b>, @original_filename="Golf.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"Golf.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"7"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-19pft56.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp33.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp33.jpg[0]'
+Command :: convert '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp33.jpg[0]' -auto-orient -resize "200" '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp3320140916-21518-qh3yr9'
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp3320140916-21518-qh3yr9'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp33.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp33.jpg[0]'
+Command :: convert '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp33.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp3320140916-21518-1ndxc43'
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-v5fp3320140916-21518-1ndxc43'
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/690c3b1042564741e15a5ce50397917220140916-21518-nj8mhq.jpg'
+  [1m[35mSQL (0.6ms)[0m  UPDATE "listings" SET "image_file_name" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "listings"."id" = 7  [["image_file_name", "Golf.jpg"], ["image_updated_at", "2014-09-17 03:57:04.516620"], ["updated_at", "2014-09-17 03:57:05.009472"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings/7
+Completed 302 Found in 6469ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/listings/7" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered listings/show.html.erb within layouts/application (445.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 593ms (Views: 591.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:57:16 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:19 -0700
+
+
+Started GET "/listings/3/edit" for 127.0.0.1 at 2014-09-16 20:57:38 -0700
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered listings/_form.html.erb (3.3ms)
+  Rendered listings/edit.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/listings/3" for 127.0.0.1 at 2014-09-16 20:57:44 -0700
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "listing"=>{"name"=>"Couple Pillows", "description"=>"The base is a cream coton with black fabric ink imprinted atop. Available in 16x16 with invisible zipper closer", "price"=>"42.95", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb6b1311fb8 @tempfile=#<Tempfile:/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/RackMultipart20140916-21518-1oetdj4>, @original_filename="pillows.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"pillows.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"3"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-1odtpfl.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r.jpg[0]'
+Command :: convert '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r.jpg[0]' -auto-orient -resize "200" '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r20140916-21518-1ba404f'
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r20140916-21518-1ba404f'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r.jpg[0]'
+Command :: convert '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r20140916-21518-16486zi'
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-6zvp1r20140916-21518-16486zi'
+Command :: file -b --mime '/var/folders/yy/46ts84j16mg6fyp5qlmlg3940000gn/T/9243d69ddeac95adbf19a0da14bf9af020140916-21518-4n1z1n.jpg'
+  [1m[35mSQL (0.4ms)[0m  UPDATE "listings" SET "image_file_name" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "listings"."id" = 3  [["image_file_name", "pillows.jpg"], ["image_updated_at", "2014-09-17 03:57:45.098543"], ["updated_at", "2014-09-17 03:57:45.241233"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings/3
+Completed 302 Found in 4674ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/listings/3" for 127.0.0.1 at 2014-09-16 20:57:48 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered listings/show.html.erb within layouts/application (334.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 460ms (Views: 457.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 20:57:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 21:21:33 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 21:22:01 -0700
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:02 -0700
+
+
+Started DELETE "/listings/5" for 127.0.0.1 at 2014-09-16 21:22:09 -0700
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "id"=>"5"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "listings" WHERE "listings"."id" = ?[0m  [["id", 5]]
+  [1m[35m (5.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 1143ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:11 -0700
+
+
+Started DELETE "/listings/6" for 127.0.0.1 at 2014-09-16 21:22:14 -0700
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "id"=>"6"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "listings" WHERE "listings"."id" = ?  [["id", 6]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 853ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:16 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:16 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:16 -0700
+
+
+Started DELETE "/listings/4" for 127.0.0.1 at 2014-09-16 21:22:18 -0700
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "listings" WHERE "listings"."id" = ?[0m  [["id", 4]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 762ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:19 -0700
+
+
+Started DELETE "/listings/8" for 127.0.0.1 at 2014-09-16 21:22:21 -0700
+Processing by ListingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ApO+SNAPU8PVEl0z8QABV/rkyOiBCRU6NAsLKRw5/hk=", "id"=>"8"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "listings" WHERE "listings"."id" = ?  [["id", 8]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 1155ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-09-16 21:22:22 -0700
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.1ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:23 -0700
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:22:33 -0700
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-09-16 21:23:00 -0700
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (621.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 696ms (Views: 695.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 21:23:01 -0700
